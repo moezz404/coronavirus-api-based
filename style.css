@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&family=Open+Sans:ital@1&display=swap');
+
+body {
+    font-family: 'Baloo Bhaina 2', cursive;
+    margin: 2% 10% 10% 10%;
+}
+
+.container h2, h3{
+    text-align: center;
+}
+
+.container h3 {
+    font-weight: lighter;
+    opacity: 0.8;
+}
+
+.container {
+  padding: 20px;
+  background-color: #e7e7e7;
+  border-radius: 20px;
+}
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+input[type=submit] {
+  background-color: rgb(199, 43, 43);
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+.results {
+    margin-top: 20px;
+}
+
+.results span {
+    font-weight: bold;
+}
+
+.results p {
+    margin-left: 50px;
+}
