@@ -14,7 +14,7 @@ statButton.addEventListener("click", (e) => {
         .then((data)=>{
             results.style.display = "";
             for(var i = 0; i < 247 ; i++){
-                if(data.Countries[i].Country.toLowerCase() === countryInput.value.toLowerCase()){
+                if(data.Countries[i].Country.toLowerCase().includes(countryInput.value.toLowerCase())){
                     results.innerHTML = `<h2>${data.Countries[i].Country} Results</h2>
                                          <p>New Confirmed: <span>${data.Countries[i].NewConfirmed}</span></p>
                                          <p>New Deaths: <span>${data.Countries[i].NewDeaths}</span></p>
@@ -24,12 +24,12 @@ statButton.addEventListener("click", (e) => {
                                          <p>Total Recovered: <span>${data.Countries[i].TotalRecovered}</span></p>`;
                 }
             }
-            if(countryInput.value.toLowerCase() === "Global".toLowerCase()){
+            /* if("Global".toLowerCase().includes(countryInput.value.toLowerCase())){
                 results.innerHTML = `<h2>Global Results</h2>
                                     <p>Total Case Confirmed: <span>${data.Global.TotalConfirmed}</span></p>
                                     <p>Total Deaths: <span>${data.Global.TotalDeaths}</span></p>
                                     <p>Total Recovered: <span>${data.Global.TotalRecovered}</span></p>`;
-            }
+            } */
         }); 
     
     
